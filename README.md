@@ -2,7 +2,7 @@
 
 Backend API for vehicle rentals with user authentication and booking management.
 
-**Live URL:** `https://your-deployment-url.com`
+**Live URL:** `https://b6-a2-assignment-n56ds707m-nafis-raihans-projects.vercel.app/`
 
 ## Features
 
