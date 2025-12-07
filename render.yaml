@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: vehicle-rental-api
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: BCRYPT_SALT_ROUNDS
+        value: 10
+      - key: JWT_EXPIRES_IN
+        value: 7d
+        
+databases:
+  - name: vehicle-rental-db
+    databaseName: vehicle_rental
+    user: vehicle_rental_user
