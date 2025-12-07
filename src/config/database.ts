@@ -15,5 +15,4 @@ pool.on('connect', () => {
 
 pool.on('error', (err: Error) => {
   console.error('Unexpected database error:', err);
-  process.exit(-1);
 });
