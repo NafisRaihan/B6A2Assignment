@@ -1,0 +1,1 @@
+{"version":3,"file":"routes.js","sourceRoot":"","sources":["../../../src/modules/auth/routes.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,qCAAiC;AACjC,6DAA+C;AAE/C,MAAM,MAAM,GAAG,IAAA,gBAAM,GAAE,CAAC;AAExB,MAAM,CAAC,IAAI,CAAC,SAAS,EAAE,cAAc,CAAC,aAAa,CAAC,CAAC;AACrD,MAAM,CAAC,IAAI,CAAC,SAAS,EAAE,cAAc,CAAC,aAAa,CAAC,CAAC;AAErD,kBAAe,MAAM,CAAC"}
