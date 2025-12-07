@@ -10,7 +10,6 @@ exports.config = {
     port: process.env.PORT || 3000,
     nodeEnv: process.env.NODE_ENV || 'development',
     database: {
-        // Support DATABASE_URL (common for hosted databases like Render, Railway, Neon)
         connectionString: process.env.DATABASE_URL,
         host: process.env.DB_HOST || 'localhost',
         port: parseInt(process.env.DB_PORT || '5432'),

@@ -1,7 +1,6 @@
 import { Pool } from 'pg';
 import { config } from './index';
 
-// Use DATABASE_URL if available (for production), otherwise use individual config
 export const pool = config.database.connectionString
   ? new Pool({
       connectionString: config.database.connectionString,
