@@ -1,8 +1,9 @@
 export interface User {
   id: number;
+  name: string;
   email: string;
   password: string;
-  full_name: string;
+  phone: string;
   role: 'admin' | 'customer';
   created_at: Date;
   updated_at: Date;
@@ -10,25 +11,23 @@ export interface User {
 
 export interface Vehicle {
   id: number;
-  name: string;
-  type: string;
-  brand: string;
-  model: string;
-  year: number;
-  price_per_day: number;
-  available: boolean;
+  vehicle_name: string;
+  type: 'car' | 'bike' | 'van' | 'SUV';
+  registration_number: string;
+  daily_rent_price: number;
+  availability_status: 'available' | 'booked';
   created_at: Date;
   updated_at: Date;
 }
 
 export interface Booking {
   id: number;
-  user_id: number;
+  customer_id: number;
   vehicle_id: number;
-  start_date: Date;
-  end_date: Date;
-  total_cost: number;
-  status: 'pending' | 'active' | 'completed' | 'cancelled';
+  rent_start_date: Date;
+  rent_end_date: Date;
+  total_price: number;
+  status: 'active' | 'cancelled' | 'returned';
   created_at: Date;
   updated_at: Date;
 }
